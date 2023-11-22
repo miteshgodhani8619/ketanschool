@@ -281,6 +281,7 @@ p {
   color: var(--white);
   background: var(--primary);
   border-radius:50%;
+  transition: 0.8s;
   
 } 
 
