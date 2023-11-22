@@ -29,8 +29,11 @@ a { text-decoration:none ;}
     --foCat:'Catamaran', sans-serif;
     
     --fs60: 60px;
-    --fs15: 15px;
+    --fs45: 45px;
+    --fs20: 20px;
     --fs16: 16px;
+    --fs15: 15px;
+    
 
     --fw400:400;
     --fw500:500;
@@ -69,6 +72,14 @@ h1 {
     color: var(--mainBlue);
 }
 
+h3 {
+  font-size: var(--fs45);
+  font-weight: var(--fwbo);
+  font-family: var(--foCat);
+  color: var(--mainBlue);
+}
+
+
 p {
     font-family: var(--foRobo);
     color: var(--gray);
@@ -86,10 +97,12 @@ p {
     font-weight: var(--fw600);
     font-family: var(--foRobo);
 }
-
-
-
-
+.redTitle {
+  font-size: var(--fs20);
+  font-weight: var(--fw600);
+  font-family: var(--foSac);
+  color: var(--primary);
+}
 
 .is-sticky {
     position: fixed;
@@ -247,6 +260,36 @@ p {
 }
 
 
+.list-number li {
+  list-style:none;
+  float: left;
+  width: 49%;
+  font-size: var(--fs16);
+  font-weight: var(--fw600);
+  color: var(--mainBlue);
+  margin-bottom:20px;
+}
+.list-number li span {
+  display: inline-block;
+  width:30px;
+  height:30px;
+  text-align: center;
+  line-height:30px;
+  margin-right:10px;
+  font-size: var(--fs16);
+  font-weight: var(--fw600);
+  color: var(--white);
+  background: var(--primary);
+  border-radius:50%;
+  
+} 
+
+.list-number li:hover span {
+  background: var(--orange);
+}
+
+/* --------------------------- All Type Animation Class ----------------*/
+
 @keyframes moveLeftBounce {
     0% {
       
@@ -298,16 +341,7 @@ p {
     }
   }
 
-/* ----------------------------------------------
- * See http://animista.net/license for more info. 
- 
- * ---------------------------------------------- */
-/**
- * ----------------------------------------
- * animation slide-top
- * ----------------------------------------
- */
- @-webkit-keyframes slide-top {
+  @-webkit-keyframes slide-top {
     0% {
       -webkit-transform: translateY(20px);
               transform: translateY(20px);
@@ -318,6 +352,7 @@ p {
     }
   }
   @keyframes slide-top {
+
     0% {
       -webkit-transform: translateY(20px);
               transform: translateY(20px);
@@ -340,3 +375,6 @@ p {
       top: 8px;
     }
   }
+
+
+  /* --------------------------- End of All Type Animation Class ----------------*/
