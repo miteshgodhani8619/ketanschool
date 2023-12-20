@@ -39,6 +39,7 @@ a { text-decoration:none ;}
     --fs50: 50px;
     --fs45: 45px;
     --fs30: 30px;
+    --fs28: 28px;
     --fs25: 25px;
     --fs20: 20px;
     --fs18: 18px;
@@ -62,6 +63,7 @@ a { text-decoration:none ;}
     --darkcream:#fee9ca;
     --redcream:#fdeee9;
     --foobluebg:#091629;
+    --bgtopbanner:#e7ddf4;
     /* Bootstrap Affected Changes */
       --bs-btn-active-color:#FFFFFF;
       --bs-btn-active-bg:#ea512e;
@@ -510,6 +512,33 @@ p {
 }
 
 
+.footer {
+  background:url(../img/footer-bg.png) no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+z-index: 1;
+ 
+}
+.footer::before {
+  position: absolute;
+content: "";
+height: 100%;
+width: 100%;
+background: #000000;
+left: 0;
+right: 0;
+top: 0;
+z-index: -1;
+opacity:0.9;
+}
+
+.footer h2, .footer h2 a {
+  font-size: var(--fs50);
+  color: var(--white);
+}
+.footer p {
+  color: var(--white);
+}
 
 
 
@@ -593,18 +622,4 @@ p {
   }
 }
 
-
-@media only screen and (max-width: 1199px) {
-    .mean-container a.meanmenu-reveal span {
-      display: block;
-      background: #000;
-      height: 4px;
-      margin-top: -5px;
-      border-radius: 3px;
-      position: relative;
-      top: 8px;
-    }
-  }
-
-
-  /* --------------------------- End of All Type Animation Class ----------------*/
+/* --------------------------- End of All Type Animation Class ----------------*/

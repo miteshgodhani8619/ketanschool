@@ -1,0 +1,149 @@
+
+
+ /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+ @media (max-width: 1399.99px) {
+  
+    .owl-nav .owl-prev {
+        position: absolute;
+        top:35%;
+        left:-2%;        
+    }
+    .navbar-toggler-icon{
+        width: 60px;
+        height: 60px;
+    }
+
+  }
+
+
+
+ /* `xl` applies to large devices (desktops, less than 1200px) */
+ @media (max-width: 1199.99px) { 
+    .banner-contant {
+        padding-top:145px;
+        padding-bottom: 150px;
+    }
+
+    .shape2 {
+        max-width:60px;
+    }
+ }
+
+
+
+ /* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.99px) { 
+   
+    .topBanner {
+        height:700px;
+        overflow: hidden;
+    }
+    .banner-contant {
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+
+    .shape4 {
+        left: 50px;
+        bottom: 100px;
+    }
+    .popularClass .card .card-body {
+        padding: 45px 10px 30px 11px;
+    }
+    
+    .cardDataList li {
+        margin-right: 20px;
+    }
+
+   
+    .owl-nav .owl-prev {
+        left: -7%;
+      }
+
+}
+
+
+
+ /* `md` applies to small devices (landscape phones, less than 768px) */
+ @media (max-width: 768px) {
+    h1 {
+        margin:20px 0;
+        font-size: var(--fs30);
+    }
+    .navbar-toggler-icon {
+        width: 37px;
+        height: 30px;
+    }
+
+    .shape1, .shape2, .shape3, .shape4, .shape5, .who-shape, .we-shape1, .we-shape2, .we-shape3
+    {
+        display: none;
+    }
+    .topBanner {
+        height: auto;
+        background-image: unset;
+        background-color: var(--bgtopbanner);
+    }
+    .banner-contant {
+    text-align: center;
+    margin:70px auto;
+    }
+    .event-list li {
+        text-align: center;
+    }
+    .event-data {
+        margin-top:25px;
+    }
+    .news-blog .cardDataList li, .news-blog .cardDataList li span {
+        font-size: var(--fs14);
+    }
+
+  }
+
+
+ /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) { 
+
+
+    h3 {
+        font-size: var(--fs28);
+    }
+
+    .py-100 {
+        padding-top:50px;
+        padding-bottom:20px;
+    }
+
+    .banner-contant {
+        margin-bottom: 25px;
+    }
+    .banner-contant .btn {
+        margin:0  13px;
+    }
+
+    .list-number li {
+        width: 100%;
+    }
+
+    .section-title {
+        margin-bottom: 30px;
+    }
+
+    .block-title {
+        margin:15px 0;
+    }
+
+    .block-title h3 {
+        margin-top: 15px;
+        font-size: var(--fs25);
+    }
+
+    .foo-widget {
+        margin-bottom: 30px;
+    }
+
+}
+
+
+
+
