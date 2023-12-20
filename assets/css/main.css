@@ -1,3 +1,10 @@
+/*
+  This stylesheet is Created for Common Main Class.
+  also for maintaning theme just needed to change some of common class
+
+*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&display=swap');
 
 
@@ -27,34 +34,38 @@ a { text-decoration:none ;}
     --foRobo: 'Roboto', sans-serif;
     --foSac: 'Sacramento',sans-serif;
     --foCat:'Catamaran', sans-serif;
-    
+    --fs80: 80px;
     --fs60: 60px;
+    --fs50: 50px;
     --fs45: 45px;
+    --fs30: 30px;
+    --fs25: 25px;
     --fs20: 20px;
+    --fs18: 18px;
     --fs16: 16px;
     --fs15: 15px;
-    
-
+    --fs14: 14px;
     --fw400:400;
     --fw500:500;
     --fw600:600;
     --fwbo:bold;
-    
-
     --primary: #ea512e;
     --orange:#f5890d;
     --white:#FFFFFF;
+    --black:#000000;
+    --cream:#fdf6ed;
     --mainBlue:#1b0238;
     --gray:#6b6b84;
-
-
-
-
+    --lightBlue:#d3f5fe;
+    --lightCream:#fce0ad;
+    --lightPink:#fbc9d5;
+    --darkcream:#fee9ca;
+    --redcream:#fdeee9;
+    --foobluebg:#091629;
     /* Bootstrap Affected Changes */
-    --bs-btn-active-color:#FFFFFF;
-    --bs-btn-active-bg:#ea512e;
-
-    /* End of Bootstrap Affected Changes */
+      --bs-btn-active-color:#FFFFFF;
+      --bs-btn-active-bg:#ea512e;
+  /* End of Bootstrap Affected Changes */
 }
 
 [data-bs-theme=dark] {
@@ -79,6 +90,12 @@ h3 {
   color: var(--mainBlue);
 }
 
+h4, h4 a {
+  font-size: var(--fs25);
+  font-weight: var(--fwbo);
+  font-family: var(--foCat);
+  color: var(--mainBlue);
+}
 
 p {
     font-family: var(--foRobo);
@@ -103,20 +120,6 @@ p {
   font-family: var(--foSac);
   color: var(--primary);
 }
-
-.is-sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index:5;
-    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-    background: var(--white);
-  }
-
-
-
-
 
 .btn, .btn:visited, .btn:active, .btn.active  {
     padding:12px 35px;
@@ -171,13 +174,20 @@ p {
 }
 
 
-
-
-
-
-
-
 /* Aerrow for dropdown */
+
+
+.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:5;
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  animation: 800ms ease-in-out 0s normal none 1 running fadeInDown;
+  background: var(--white);
+}
+
+
 .dropdown-toggle::after {
     border:0 ;    
 }
@@ -289,70 +299,275 @@ p {
   background: var(--orange);
 }
 
+
+.socialList {
+  position: absolute;
+  left:0;
+  right: 0;
+  bottom:30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.socialList li {
+   display: inline-block;
+   opacity: 0;
+   visibility: hidden;
+   transform: translateY(30px);
+   transition:all 0.3s ease-in-out 0s
+ }
+
+
+ .imgBox:hover li  { 
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+ }
+.socialList li a {
+  height: 33px;
+  width: 33px;
+  line-height: 33px;
+  border-radius:50%;
+  display: inline-block;
+  background: var(--primary);
+}
+.socialList li a .bx { 
+  font-size: var(--fs20);
+  font-weight: var(--fw400);
+  color: var(--white);
+}
+
+.socialList li a:hover { 
+  background: var(--orange);
+
+}
+
+.social-footer li {
+   display: inline-block;
+   margin-right:10px;
+ }
+ .social-footer li a {
+  text-align: center;
+  height: 33px;
+  width: 33px;
+  line-height: 33px;
+  border-radius:50%;
+  display: inline-block;
+  background: var(--primary);
+  transform: translateY(5px);
+  transition:all 0.3s ease-in-out 0s
+}
+.social-footer li a .bx { 
+  font-size: var(--fs18);
+  font-weight: var(--fw400);
+  color: var(--white);
+}
+
+.social-footer li a:hover { 
+  transform: translateY(0px);
+  background: var(--orange);
+
+}
+
+.foo-widget h3 {
+  font-size:var(--fs25);
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  color:var(--white);
+}
+.foo-widget h3::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 50px;
+  background-color:var(--primary);
+} 
+.foo-cont-info li {
+  padding-left:35px;
+  margin-bottom:20px;
+  position: relative;
+  font-size: var(--fs14);
+  color: var(--white);
+}
+
+.foo-cont-info li .bx {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-weight: var(--fw400);
+  font-size:var(--fs25);
+  color:var(--primary);
+}
+.foo-cont-info li span {
+  display: block;
+  font-size:var(--fs20);
+  font-weight:var(--fw500);
+  color:var(--white);
+  margin-bottom: 5px; 
+}
+
+.foo-cont-info li a {
+  display: inline-block;
+  color:var(--white);
+  font-weight:var(--fw400);
+  position: relative;
+  font-size:var(--fs14);
+}
+
+
+.foo-cont-info li a::before, .foo-links a::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height:2px;
+  transition: 0.5s;
+  background-color:var(--primary);
+}
+.foo-cont-info li a:hover, .foo-links a:hover {
+  color:var(--primary);
+}
+.foo-cont-info li a:hover::before, .foo-links a:hover::before{
+  width:100%;
+}
+.foo-links li {
+  margin-bottom:20px;
+}
+.foo-links a {
+  display: inline-block;
+  color:var(--white);
+  font-weight:var(--fw500);
+  position: relative;
+}
+
+.foo-gallary {
+  display: flex;
+  flex-wrap: wrap;
+}
+.foo-gallary li {
+  text-align: center;
+  padding:2px;
+  max-width: 33.333333%;
+  flex:0 0 33.3333333%;
+}
+.foo-gallary li .img-cover {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.foo-gallary li .img-cover::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom:0;
+  z-index: 1;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  background-color:var(--primary);
+}
+
+.foo-gallary li .img-cover:hover::before {
+  opacity: 0.5;
+  visibility: visible;
+}
+.foo-gallary li .img-cover img {
+  transition: 0.5s;
+}
+.foo-gallary li .img-cover:hover img {
+  transform: scale(1.1);
+}
+.foo-gallary li .img-cover a {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+}
+.footer-bottom {
+  padding:30px 0;
+  background-color: var(--foobluebg);
+}
+.footer-bottom .foo-text {
+  font-family: var(--foRobo);
+  color: var(--white);
+  font-weight: var(--fw400);
+}
+.footer-bottom a {
+  color: var(--primary);
+  font-weight: var(--fw600);
+}
+.footer-bottom a:hover {
+  color: var(--white);
+}
+
+
+
+
+
+
+
+
+
 /* --------------------------- All Type Animation Class ----------------*/
 
 @keyframes moveLeftBounce {
     0% {
-      
-              transform: translateX(0px);
+      transform: translateX(0px);
     }
     50% {
-      
-              transform: translateX(20px);
+      transform: translateX(20px);
     }
     100% {
-      
-              transform: translateX(0px);
+      transform: translateX(0px);
     }
   }
 
   @keyframes moveBounce {
     0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
       transform: translateY(0px);
     }
-  }
-
-  @keyframes border-transform-default {
-    0%, to {
-      border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
-    }
-    14% {
-      border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
-    }
-    28% {
-      border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
-    }
-    42% {
-      border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
-    }
-    56% {
-      border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
-    }
-    70% {
-      border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
-    }
-    84% {
-      border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
-    }
-  }
-
-  @-webkit-keyframes slide-top {
-    0% {
-      -webkit-transform: translateY(20px);
-              transform: translateY(20px);
+    50% {
+      transform: translateY(20px);
     }
     100% {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
+    transform: translateY(0px);
     }
   }
-  @keyframes slide-top {
+
+  @keyframes circleround {
+    0% {
+      border-radius: 57% 37% 54% 46%;
+    }
+    14% {
+      border-radius: 40% 55% 54% 46%;
+    }
+    28% {
+      border-radius: 54% 46% 38% 57%;
+    }
+    42% {
+      border-radius: 56% 39% 55% 45%;
+    }
+    56% {
+      border-radius: 56% 39% 60% 33%;
+    }
+    70% {
+      border-radius: 50% 50% 34% 56%;
+    }
+    84% {
+      border-radius: 46% 54% 50% 50%/35% 56% 39% 50%;
+    }
+  }
+
+ @keyframes slide-top {
 
     0% {
       -webkit-transform: translateY(20px);
@@ -364,6 +579,20 @@ p {
     }
   }
   
+@keyframes fadeInDown {
+  0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0)
+  }
+
+  to {
+      opacity: 1;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0)
+  }
+}
+
 
 @media only screen and (max-width: 1199px) {
     .mean-container a.meanmenu-reveal span {
