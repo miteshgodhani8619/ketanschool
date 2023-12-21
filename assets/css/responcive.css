@@ -75,9 +75,11 @@
         height: 30px;
     }
 
-    .shape1, .shape2, .shape3, .shape4, .shape5, .who-shape, .we-shape1, .we-shape2, .we-shape3
+    .shape1, .shape2, .shape3, .shape4, .shape5, .who-shape, .we-shape1, .we-shape2, .we-shape3, .banner-shape 
     {
         display: none;
+        visibility: hidden;
+        opacity:0 ;
     }
     .topBanner {
         height: auto;
@@ -103,7 +105,9 @@
 
  /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) { 
-
+    .container-fluid  {
+        width:94%;
+    }
 
     h3 {
         font-size: var(--fs28);
@@ -118,7 +122,7 @@
         margin-bottom: 25px;
     }
     .banner-contant .btn {
-        margin:0  13px;
+        margin:13px;
     }
 
     .list-number li {
@@ -137,7 +141,12 @@
         margin-top: 15px;
         font-size: var(--fs25);
     }
-
+    .owl-nav .owl-next {
+        right:0px;
+    }
+    .owl-nav .owl-prev {
+        left:0;
+      }
     .foo-widget {
         margin-bottom: 30px;
     }
