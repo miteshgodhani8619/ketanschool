@@ -541,11 +541,109 @@ opacity:0.9;
 }
 
 
+.go-up {
+  position: fixed;
+  cursor: pointer;
+  bottom: -100px;
+  right: 20px;
+  opacity: 0;
+  visibility: hidden;
+  color: #ffffff;
+  background:var(--mainBlue);
+  z-index: 4;
+  width: 45px;
+  text-align: center;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 22px;
+  transition: .9s;
+  overflow: hidden;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+}
+.go-up .bx{
+  font-size: 30px;
+  line-height: 45px;
+  
+}
 
 
+.go-up:hover {
+  transform: translateY(-20%);  
+  background: var(--primary);
+}
 
+.go-up.active {
+  opacity: 1;
+  visibility: visible;
+  bottom: 20px;
+}
+.dark-version {
+  position: fixed;
+  z-index: 1;
+  right: 95px;
+  bottom: 45px;
+}
+.dark-version .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
 
+.dark-version .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.dark-version input:checked + .slider::before {
+  transform: translateX(24px);
+  background: white url("../img/sunny.png") no-repeat center center;  
+}
+.dark-version .slider.round::before {
+  border-radius: 50%;
+}
+.dark-version .slider.round {
+  border-radius: 50px;
+}
+.dark-version .slider::before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 2.5px;
+  bottom: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  transition: 0.4s;
+  box-shadow: 0 0px 15px #2020203d;
+  background: white url("../img/night.png") no-repeat center center;
+}
+.dark-version .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ea512e;
+  background-color: rgb(234, 81, 46);
+  transition: 0.4s;
+}
+body {
+  transition: background-color 0.5s;
+}
 
+.theme-light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.theme-dark {
+  background-color: #000000;
+  color: #ffffff;
+}
 /* --------------------------- All Type Animation Class ----------------*/
 
 @keyframes moveLeftBounce {

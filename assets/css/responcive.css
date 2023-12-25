@@ -82,6 +82,7 @@
         opacity:0 ;
     }
     .topBanner {
+        max-width:100% !important ;
         height: auto;
         background-image: unset;
         background-color: var(--bgtopbanner);
@@ -105,10 +106,7 @@
 
  /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) { 
-    .container-fluid  {
-        width:94%;
-    }
-
+   
     h3 {
         font-size: var(--fs28);
     }
@@ -142,13 +140,17 @@
         font-size: var(--fs25);
     }
     .owl-nav .owl-next {
-        right:0px;
+        right:-17px;
     }
     .owl-nav .owl-prev {
-        left:0;
+        left:-14px;
       }
     .foo-widget {
         margin-bottom: 30px;
+    }
+
+    .owl-carousel {
+        margin:0 auto;
     }
 
 }

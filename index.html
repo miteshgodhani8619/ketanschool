@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="theme-light">
+<html class="theme-light" lang="en" >
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +12,13 @@
       <link rel="stylesheet" href="./assets/css/responcive.css">
       <title>Ketan - Childcare & Kids School</title>
   </head>
-  <body>
+  <body >
   <!-- Top Navbar start -->
     <header class="container-fluid" >
       <div class="container">
           <div class="row">
               <nav class="navbar navbar-expand-xl bg-body-tertiary">
-                    <a class="navbar-brand" href="javascript:void">
+                    <a class="navbar-brand" href="index.html">
                       <img src="./assets/img/logo.png" alt="Ketan">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,33 +27,50 @@
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                       <ul class="navbar-nav mb-2 mb-lg-0 m-auto">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="javascript:void">Home</a>
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="javascript:void">Pages</a>
+                          <a class="nav-link" href="about-us.html">About Us</a>
                         </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="javascript:void" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <a class="nav-link dropdown-toggle" href="teacher.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Teacher
                             <i class="bx bx-chevron-down"></i>
                           </a>
                           <ul class="dropdown-menu shadow animate__animated slideInUp ">
-                            <li><a class="dropdown-item" href="javascript:void">Action</a></li>
-                            <li><a class="dropdown-item" href="javascript:void">Another action</a></li>
-                            <li><a class="dropdown-item" href="javascript:void">Something else here</a></li>
+                            <li><a class="dropdown-item" href="teacher.html">Teacher </a></li>
+                            <li><a class="dropdown-item" href="teacher-details.html">Teacher Details </a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a href="events.html" class="nav-link dropdown-toggle"role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                            Events <i class="bx bx-chevron-down"></i>
+                          </a>
+                          <ul class="dropdown-menu shadow animate__animated slideInUp ">
+                            <li><a class="dropdown-item" href="events.html">Events</a></li>
+                            <li><a class="dropdown-item" href="event-details.html">Event Details</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a href="class.html" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                          Class  <i class="bx bx-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu shadow animate__animated slideInUp ">
+                          <li><a class="dropdown-item" href="class.html">Class</a></li>
+                          <li><a class="dropdown-item" href="class-details.html">Class Details</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a href="blog.html" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"  >
+                            Blog <i class="bx bx-chevron-down"></i>
+                          </a>
+                          <ul class="dropdown-menu shadow animate__animated slideInUp ">
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
                           </ul>
                         </li>
                         <li class="nav-item">
-                          <a href="javascript:void" class="nav-link">Event</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="javascript:void" class="nav-link">Class</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="javascript:void" class="nav-link">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="javascript:void" class="nav-link">Contact</a>
+                          <a href="contact.html" class="nav-link">Contact</a>
                         </li>
                       </ul>
                       <ul class="lagmenu navbar">
@@ -104,7 +121,7 @@
     </header> 
   <!-- /Top Navbar End -->
   <!-- Home Top Main Banner Start -->
-    <section class="topBanner position-relative " >
+    <section class="topBanner position-relative container-fluid" >
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col-lg-6 col-12">
@@ -143,7 +160,7 @@
     </section>
   <!-- / Home Top Main Banner End -->
   <!-- Who We Are Section Start -->
-    <section class="who-we-are py-100">
+    <section class="who-we-are py-100 container-fluid">
         <div class="container  position-relative">
           <div class="row align-items-center">
             <div class="col-lg-6">
@@ -186,353 +203,308 @@
     </section>
   <!-- / Who We Are Section End -->
   <!-- Popular Class Section Start -->
-      <section class="popularClass py-100 position-relative">
-        <div class="container">
-          <div class="row row-cols-12 gx-5 ">
-            <div class="col text-center mb-lg-5 section-title">
-              <span class="redTitle">Classes</span>
-              <h3>Popular Classes</h3>
+    <section class="popularClass py-100 position-relative container-fluid">
+      <div class="container">
+        <div class="row row-cols-12 gx-5 ">
+          <div class="col text-center mb-lg-5 section-title">
+            <span class="redTitle">Classes</span>
+            <h3>Popular Classes</h3>
+          </div>
+        </div>
+        <div class="row row-cols-md-2 row-cols-lg-3 row-cols-1 g-4 ">
+          <div class="col">
+            <div class="card p-0 border-0">
+              <div class="imgCover">
+                <img src="./assets/img/class-1.jpg" class="card-img-top" alt="Class 1">
+              </div>
+              <div class="card-body position-relative">
+                <div class="priceBudge">
+                  $880
+                </div>
+                <h4 class="card-title">
+                  <a href="javascript:void">
+                    Color Matching
+                  </a>
+                </h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <ul class="cardDataList">
+                  <li><span>Age: </span>3-5 Year </li>
+                  <li><span>Time: </span> 8-10 AM  </li>
+                  <li><span>Seat:</span> 25  </li>
+                </ul>
+                <a href="javascript:void" class="btn btn-primary">Join Class</a>
+              </div>
             </div>
           </div>
-          <div class="row row-cols-md-2 row-cols-lg-3 row-cols-1 g-4 ">
-            <div class="col">
-              <div class="card p-0 border-0">
-                <div class="imgCover">
-                  <img src="./assets/img/class-1.jpg" class="card-img-top" alt="Class 1">
+          <div class="col">
+            <div class="card p-0 border-0">
+              <div class="imgCover">
+                <img src="./assets/img/class-2.jpg" class="card-img-top" alt="Class 2">
+              </div>
+              <div class="card-body position-relative">
+                <div class="priceBudge">
+                  $880
                 </div>
-                <div class="card-body position-relative">
-                  <div class="priceBudge">
-                    $880
-                  </div>
-                  <h4 class="card-title">
-                    <a href="javascript:void">
-                      Color Matching
-                    </a>
-                  </h4>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <ul class="cardDataList">
-                    <li><span>Age: </span>3-5 Year </li>
-                    <li><span>Time: </span> 8-10 AM  </li>
-                    <li><span>Seat:</span> 25  </li>
-                  </ul>
-                  <a href="javascript:void" class="btn btn-primary">Join Class</a>
-                </div>
+                <h4 class="card-title">
+                  <a href="javascript:void">
+                    Learning Disciplines
+                  </a>
+                </h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <ul class="cardDataList">
+                  <li><span>Age: </span>3-5 Year </li>
+                  <li><span>Time: </span> 8-10 AM  </li>
+                  <li><span>Seat:</span> 25  </li>
+                </ul>
+                <a href="javascript:void" class="btn btn-primary">Join Class</a>
               </div>
             </div>
-            <div class="col">
-              <div class="card p-0 border-0">
-                <div class="imgCover">
-                  <img src="./assets/img/class-2.jpg" class="card-img-top" alt="Class 2">
-                </div>
-                <div class="card-body position-relative">
-                  <div class="priceBudge">
-                    $880
-                  </div>
-                  <h4 class="card-title">
-                    <a href="javascript:void">
-                      Learning Disciplines
-                    </a>
-                  </h4>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <ul class="cardDataList">
-                    <li><span>Age: </span>3-5 Year </li>
-                    <li><span>Time: </span> 8-10 AM  </li>
-                    <li><span>Seat:</span> 25  </li>
-                  </ul>
-                  <a href="javascript:void" class="btn btn-primary">Join Class</a>
-                </div>
+          </div>
+          <div class="col m-md-auto mt-md-4 ">
+            <div class="card p-0 border-0">
+              <div class="imgCover">
+                <img src="./assets/img/class-3.jpg" class="card-img-top" alt="Class 3">
               </div>
-            </div>
-            <div class="col m-md-auto mt-md-4 ">
-              <div class="card p-0 border-0">
-                <div class="imgCover">
-                  <img src="./assets/img/class-3.jpg" class="card-img-top" alt="Class 3">
+              <div class="card-body position-relative">
+                <div class="priceBudge">
+                  $880
                 </div>
-                <div class="card-body position-relative">
-                  <div class="priceBudge">
-                    $880
-                  </div>
-                  <h4 class="card-title">
-                    <a href="javascript:void">
-                      Drawing
-                    </a>
-                  </h4>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <ul class="cardDataList">
-                    <li><span>Age: </span>3-5 Year </li>
-                    <li><span>Time: </span> 8-10 AM  </li>
-                    <li><span>Seat:</span> 25  </li>
-                  </ul>
-                  <a href="javascript:void" class="btn btn-primary">Join Class</a>
-                </div>
+                <h4 class="card-title">
+                  <a href="javascript:void">
+                    Drawing
+                  </a>
+                </h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <ul class="cardDataList">
+                  <li><span>Age: </span>3-5 Year </li>
+                  <li><span>Time: </span> 8-10 AM  </li>
+                  <li><span>Seat:</span> 25  </li>
+                </ul>
+                <a href="javascript:void" class="btn btn-primary">Join Class</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="class-shape">
-          <img src="./assets/img/class-shape-1.png" alt="Class Shape 1" class="position-absolute bottom-0 start-0" >
-          <img src="./assets/img/class-shape-2.png" alt="Class Shape 2" class="position-absolute bottom-0 end-0 " >
-        </div>
-      </section>
+      </div>
+      <div class="class-shape">
+        <img src="./assets/img/class-shape-1.png" alt="Class Shape 1" class="position-absolute bottom-0 start-0" >
+        <img src="./assets/img/class-shape-2.png" alt="Class Shape 2" class="position-absolute bottom-0 end-0 " >
+      </div>
+    </section>
   <!-- / Popular Class Section End -->
   <!-- We are Section Start -->
-      <section class="weare py-100 position-relative z-n1" >
-        <div class="container">
-          <div class="row gx-4">
-              <div class="col-lg-6 col-12">
-                  <img src="./assets/img/value-1.png" class="img-fluid " alt="Value">
-              </div>
-              <div class="col-lg-6 col-12">
-                <div class="block-title">
-                <span class="redTitle">Our Core Values</span>
-                  <h3>We are Refunding Early Childcare Education</h3>
-                </div>  
-                  <ul class="numbe-big-list">
-                      <li>
-                        <span>01</span>
-                        <div class="data-block">
-                          <h4>Active Learning</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                          </p>
-                        </div>
-                      </li>
-                      <li class="list-two">
-                        <span>02</span>
-                        <div class="data-block">
-                          <h4>Safe Environment</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                          </p>
-                        </div>
-                      </li>
-                      <li class="list-three">
-                        <span>03</span>
-                        <div class="data-block">
-                          <h4>Fully Equipment</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                          </p>
-                        </div>
-                      </li>
-                  </ul>
-              </div>
-          </div>
+    <section class="weare py-100 position-relative z-n1 container-fluid" >
+      <div class="container">
+        <div class="row gx-4">
+            <div class="col-lg-6 col-12">
+                <img src="./assets/img/value-1.png" class="img-fluid " alt="Value">
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="block-title">
+              <span class="redTitle">Our Core Values</span>
+                <h3>We are Refunding Early Childcare Education</h3>
+              </div>  
+                <ul class="numbe-big-list">
+                    <li>
+                      <span>01</span>
+                      <div class="data-block">
+                        <h4>Active Learning</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                      </div>
+                    </li>
+                    <li class="list-two">
+                      <span>02</span>
+                      <div class="data-block">
+                        <h4>Safe Environment</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                      </div>
+                    </li>
+                    <li class="list-three">
+                      <span>03</span>
+                      <div class="data-block">
+                        <h4>Fully Equipment</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                      </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="shape-we-are">
-          <img src="./assets/img/value-shape-1.png" alt="Value Shape 1" class="we-shape1" >
-          <img src="./assets/img/value-shape-2.png" alt="Value Shape 2" class="we-shape2" >
-          <img src="./assets/img/value-shape-3.png" alt="Value Shape 3" class="we-shape3" >
-        </div>
-      </section>
+      </div>
+      <div class="shape-we-are">
+        <img src="./assets/img/value-shape-1.png" alt="Value Shape 1" class="we-shape1" >
+        <img src="./assets/img/value-shape-2.png" alt="Value Shape 2" class="we-shape2" >
+        <img src="./assets/img/value-shape-3.png" alt="Value Shape 3" class="we-shape3" >
+      </div>
+    </section>
   <!-- / We are Section End -->
   <!-- Teacher Section Start -->
-      <section class="teacher py-100">
-        <div class="container-fluid">
-            <div class="row text-center">
-              <span class="redTitle">Our Core Teacher</span>
-              <h3>Meet Our Teacher</h3>
+    <section class="teacher py-100 container-fluid">
+      <div class="container-fluid">
+          <div class="row text-center">
+            <span class="redTitle">Our Core Teacher</span>
+            <h3>Meet Our Teacher</h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="teacherList">
+                  <div class="imgBox">
+                      <img src="./assets/img/teacher-1.jpg" alt="Teacher 1" class="img-fluid rounded-circle">
+                      <ul class="socialList">
+                          <li>
+                            <a href="javascript:void" target="_blank">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void" target="_blank">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void" target="_blank">
+                                <i class="bx bxl-linkedin"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void" target="_blank">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="techer-details text-center ">
+                      <h4>Glims Bond</h4>
+                      <span>Music Teacher</span>
+                  </div>
+              </div>  
             </div>
-            <div class="row">
-              <div class="col-lg-3 col-md-6">
-                <div class="teacherList">
-                    <div class="imgBox">
-                        <img src="./assets/img/teacher-1.jpg" alt="Teacher 1" class="img-fluid rounded-circle">
-                        <ul class="socialList">
-                            <li>
-                              <a href="javascript:void" target="_blank">
-                                  <i class="bx bxl-facebook"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="javascript:void" target="_blank">
-                                  <i class="bx bxl-twitter"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="javascript:void" target="_blank">
-                                  <i class="bx bxl-linkedin"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="javascript:void" target="_blank">
-                                  <i class="bx bxl-instagram"></i>
-                              </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="techer-details text-center ">
-                        <h4>Glims Bond</h4>
-                        <span>Music Teacher</span>
-                    </div>
-                </div>  
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="teacherList">
-                    <div class="imgBox">
-                        <img src="./assets/img/teacher-2.jpg" alt="Teacher 2" class="img-fluid rounded-circle">
-                        <ul class="socialList">
-                            <li>
-                              <a href="javascript:void" target="_blank">
-                                  <i class="bx bxl-facebook"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="javascript:void" target="_blank">
-                                  <i class="bx bxl-twitter"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="javascript:void" target="_blank">
-                                  <i class="bx bxl-linkedin"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="javascript:void" target="_blank">
-                                  <i class="bx bxl-instagram"></i>
-                              </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="techer-details text-center ">
-                        <h4>Sherlock Bin</h4>
-                        <span>Art Teacher</span>
-                    </div>
-                </div>  
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="teacherList">
-                    <div class="imgBox">
-                        <img src="./assets/img/teacher-3.jpg" alt="Teacher 3" class="img-fluid rounded-circle">
-                        <ul class="socialList">
-                            <li>
-                              <a href="javascript:void" target="_blank">
-                                  <i class="bx bxl-facebook"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="javascript:void" target="_blank">
-                                  <i class="bx bxl-twitter"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="javascript:void" target="_blank">
-                                  <i class="bx bxl-linkedin"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="javascript:void" target="_blank">
-                                  <i class="bx bxl-instagram"></i>
-                              </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="techer-details text-center ">
-                        <h4>Priestly Herbart</h4>
-                        <span>Math Teacher</span>
-                    </div>
-                </div>  
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="teacherList">
-                    <div class="imgBox">
-                        <img src="./assets/img/teacher-4.jpg" alt="Teacher 4" class="img-fluid rounded-circle">
-                        <ul class="socialList">
-                            <li>
-                              <a href="javascript:void" target="_blank">
-                                  <i class="bx bxl-facebook"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="javascript:void" target="_blank">
-                                  <i class="bx bxl-twitter"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="javascript:void" target="_blank">
-                                  <i class="bx bxl-linkedin"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="javascript:void" target="_blank">
-                                  <i class="bx bxl-instagram"></i>
-                              </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="techer-details text-center ">
-                        <h4>Smith Broke</h4>
-                        <span>English  Teacher</span>
-                    </div>
-                </div>  
-              </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="teacherList">
+                  <div class="imgBox">
+                      <img src="./assets/img/teacher-2.jpg" alt="Teacher 2" class="img-fluid rounded-circle">
+                      <ul class="socialList">
+                          <li>
+                            <a href="javascript:void" target="_blank">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void" target="_blank">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void" target="_blank">
+                                <i class="bx bxl-linkedin"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void" target="_blank">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="techer-details text-center ">
+                      <h4>Sherlock Bin</h4>
+                      <span>Art Teacher</span>
+                  </div>
+              </div>  
             </div>
-        </div>
-      </section>
+            <div class="col-lg-3 col-md-6">
+              <div class="teacherList">
+                  <div class="imgBox">
+                      <img src="./assets/img/teacher-3.jpg" alt="Teacher 3" class="img-fluid rounded-circle">
+                      <ul class="socialList">
+                          <li>
+                            <a href="javascript:void" target="_blank">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void" target="_blank">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void" target="_blank">
+                                <i class="bx bxl-linkedin"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void" target="_blank">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="techer-details text-center ">
+                      <h4>Priestly Herbart</h4>
+                      <span>Math Teacher</span>
+                  </div>
+              </div>  
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="teacherList">
+                  <div class="imgBox">
+                      <img src="./assets/img/teacher-4.jpg" alt="Teacher 4" class="img-fluid rounded-circle">
+                      <ul class="socialList">
+                          <li>
+                            <a href="javascript:void" target="_blank">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void" target="_blank">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void" target="_blank">
+                                <i class="bx bxl-linkedin"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void" target="_blank">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="techer-details text-center ">
+                      <h4>Smith Broke</h4>
+                      <span>English  Teacher</span>
+                  </div>
+              </div>  
+            </div>
+          </div>
+      </div>
+    </section>
   <!-- / Teacher Section End -->
   <!-- Testimonials Section Start -->
-      <section class="testimonials container-fluid py-100">
-        <div class="row text-center mb-5">
-          <span class="redTitle">Testimonials</span>
-          <h3>What Parents Say About Us</h3>
-        </div>
-        <div class="container">
-            <ul class="testimonials row text-center owl-carousel">
-                <li class="testimonials-item item">
-                    <div class="testimonials-item-box">
-                        <div class="icon">
-                            <i class="bx bxs-quote-left"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                        <div class="info-box">
-                            <h4>Glims Bond</h4>
-                            <span>Music Teacher</span>
-                        </div>
-                    </div>
-                    <div class="testimonials-image">
-                        <img src="./assets/img/testimonials-1.png" alt="image">
-                    </div>
-                </li>
-                <li class="testimonials-item item">
-                  <div class="testimonials-item-box">
-                      <div class="icon">
-                          <i class="bx bxs-quote-left"></i>
-                      </div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                      <div class="info-box">
-                          <h4>Sherlock Bin</h4>
-                          <span>Art Teacher</span>
-                      </div>
-                  </div>
-                  <div class="testimonials-image">
-                      <img src="./assets/img/testimonials-2.png" alt="image">
-                  </div>
-                </li>
-                <li class="testimonials-item item">
-                  <div class="testimonials-item-box">
-                      <div class="icon">
-                          <i class="bx bxs-quote-left"></i>
-                      </div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                      <div class="info-box">
-                          <h4>Priestly Herbart</h4>
-                          <span>Math Teacher</span>
-                      </div>
-                  </div>
-                  <div class="testimonials-image">
-                      <img src="./assets/img/testimonials-3.png" alt="image">
-                  </div>
-                </li>
-                <li class="testimonials-item item">
+    <section class="testimonials container-fluid py-100 container-fluid">
+      <div class="row text-center mb-5">
+        <span class="redTitle">Testimonials</span>
+        <h3>What Parents Say About Us</h3>
+      </div>
+      <div class="container align-items-center">
+          <ul class="testimonials row text-center owl-carousel">
+              <li class="testimonials-item item">
                   <div class="testimonials-item-box">
                       <div class="icon">
                           <i class="bx bxs-quote-left"></i>
@@ -546,43 +518,88 @@
                   <div class="testimonials-image">
                       <img src="./assets/img/testimonials-1.png" alt="image">
                   </div>
-                </li>
-                <li class="testimonials-item item">
-                  <div class="testimonials-item-box">
-                      <div class="icon">
-                          <i class="bx bxs-quote-left"></i>
-                      </div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                      <div class="info-box">
-                          <h4>Sherlock Bin</h4>
-                          <span>Art Teacher</span>
-                      </div>
-                  </div>
-                  <div class="testimonials-image">
-                      <img src="./assets/img/testimonials-2.png" alt="image">
-                  </div>
-                </li>
-                <li class="testimonials-item item">
-                  <div class="testimonials-item-box">
-                      <div class="icon">
-                          <i class="bx bxs-quote-left"></i>
-                      </div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                      <div class="info-box">
-                          <h4>Priestly Herbart</h4>
-                          <span>Math Teacher</span>
-                      </div>
-                  </div>
-                  <div class="testimonials-image">
-                      <img src="./assets/img/testimonials-3.png" alt="image">
-                  </div>
-                </li>
-            </ul>    
-        </div>
-      </section>
+              </li>
+              <li class="testimonials-item item">
+                <div class="testimonials-item-box">
+                    <div class="icon">
+                        <i class="bx bxs-quote-left"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                    <div class="info-box">
+                        <h4>Sherlock Bin</h4>
+                        <span>Art Teacher</span>
+                    </div>
+                </div>
+                <div class="testimonials-image">
+                    <img src="./assets/img/testimonials-2.png" alt="image">
+                </div>
+              </li>
+              <li class="testimonials-item item">
+                <div class="testimonials-item-box">
+                    <div class="icon">
+                        <i class="bx bxs-quote-left"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                    <div class="info-box">
+                        <h4>Priestly Herbart</h4>
+                        <span>Math Teacher</span>
+                    </div>
+                </div>
+                <div class="testimonials-image">
+                    <img src="./assets/img/testimonials-3.png" alt="image">
+                </div>
+              </li>
+              <li class="testimonials-item item">
+                <div class="testimonials-item-box">
+                    <div class="icon">
+                        <i class="bx bxs-quote-left"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                    <div class="info-box">
+                        <h4>Glims Bond</h4>
+                        <span>Music Teacher</span>
+                    </div>
+                </div>
+                <div class="testimonials-image">
+                    <img src="./assets/img/testimonials-1.png" alt="image">
+                </div>
+              </li>
+              <li class="testimonials-item item">
+                <div class="testimonials-item-box">
+                    <div class="icon">
+                        <i class="bx bxs-quote-left"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                    <div class="info-box">
+                        <h4>Sherlock Bin</h4>
+                        <span>Art Teacher</span>
+                    </div>
+                </div>
+                <div class="testimonials-image">
+                    <img src="./assets/img/testimonials-2.png" alt="image">
+                </div>
+              </li>
+              <li class="testimonials-item item">
+                <div class="testimonials-item-box">
+                    <div class="icon">
+                        <i class="bx bxs-quote-left"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                    <div class="info-box">
+                        <h4>Priestly Herbart</h4>
+                        <span>Math Teacher</span>
+                    </div>
+                </div>
+                <div class="testimonials-image">
+                    <img src="./assets/img/testimonials-3.png" alt="image">
+                </div>
+              </li>
+          </ul>    
+      </div>
+    </section>
   <!-- / Testimonials Section End -->
   <!-- Event Section Start -->
-      <section class="events py-100">
+      <section class="events py-100 container-fluid">
         <div class="container-fluid">
           <div class="container">
               <div class="row text-center section-title">
@@ -708,7 +725,7 @@
       </section>
   <!-- / Event Section End -->
  <!-- News and Blog Section Start -->
-  <section class="news-blog py-100 position-relative">
+  <section class="news-blog py-100 position-relative container-fluid">
     <div class="container">
       <div class="row row-cols-12 gx-5 ">
         <div class="col text-center mb-lg-5 ">
@@ -791,7 +808,7 @@
   </section>
 <!-- / News and Blog Section End -->
  <!-- Footer Section Start -->
- <section class="footer py-100">
+ <section class="footer py-100 container-fluid">
   <div class="container">
     <div class="row">
       <div class="col-lg-3 col-sm-6 foo-widget">
@@ -917,7 +934,7 @@
     </div>
   </div>
 </section>
-<section class="footer-bottom">
+<section class="footer-bottom container-fluid">
   <div class="container">
       <div class="row text-center">
         <div class="col-12 foo-text">
@@ -926,13 +943,25 @@
       </div>
   </div>
 </section>
+<div class="go-up">
+  <i class="bx bx-up-arrow-alt"></i>
+</div>   
+<!-- Switch for Chanage Theme -->
+<div class="dark-version">
+  <label id="switch" class="switch">
+      <input type="checkbox" onchange="toggleTheme()" id="slider">
+      <span class="slider round"></span>
+  </label>
+</div>
+<!-- End of Switch for Chanage Theme -->  
 <!-- / Footer Section End -->
 <!-- All JavaScript -->
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-      <script src="./assets/js/owl.carousel.min.js"></script>
-      <script src="./assets/js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 <!-- All JavaScript End -->
   </body>
+
 </html>
